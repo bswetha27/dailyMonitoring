@@ -34,7 +34,7 @@ public class DemoGraphics {
 	        driver.findElement(By.xpath("//h2[contains(text(),'About HRSA')]")).getText();
 	        driver.findElement(By.xpath("//div[@class='footer-hrsa-content']")).getText();
 	        driver.findElement(By.xpath("//a[@href='https://www.hrsa.gov']" )).click();
-            driver.get("https://data.hrsa.gov/data/dashboards/demographics");
+	        driver.navigate().to("https://data.hrsa.gov/data/dashboards/demographics");
             driver.findElement(By.xpath("//a[@href='https://data.hrsa.gov/about']" )).click();
             driver.get("https://data.hrsa.gov/data/dashboards/demographics");
             driver.findElement(By.xpath("//a[@href='https://data.hrsa.gov/data/about']" )).click();
